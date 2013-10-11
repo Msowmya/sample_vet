@@ -1,0 +1,45 @@
+@import "bootstrap";
+/* universal */
+
+
+body {
+  padding-top: 80px;
+  padding-right: -100px;
+    }
+.center{
+  text-align: center;
+}
+
+
+/* header */
+
+#logo {
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  padding-top: 9px;
+  font-weight: bold;
+  line-height: 1;
+&:hover {
+  color: #fff;
+  text-decoration: none;
+}
+}
+    /* listing users*/
+  table{
+
+    tr{
+      border-top: 1px solid #e8e8e8;
+      line-height: 40px;
+    }
+    td {
+      text-align: center;
+      width: 120px;
+    }
+    th {
+      width: 120px;
+    }
+  }
