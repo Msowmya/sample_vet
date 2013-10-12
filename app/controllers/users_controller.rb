@@ -1,7 +1,6 @@
 class UsersController < ApplicationController
   def new
     @user = User.new
-
   end
   def show
     @user = User.find(params[:id])
@@ -15,19 +14,18 @@ class UsersController < ApplicationController
   def update
     @user = User.find(params[:id])
 
-    if @user.update(params[:user].permit(:name,:address, :city, :state, :zip_code, :school, :years_practice))
+    if @user.update(params[:user].permit(:name, :address, :city, :state, :zip_code, :school, :years_practice))
       redirect_to @user
     else
       render 'edit'
     end
   end
-
   def create
-    @user = User.new(params[:user])
+    @user = User.new(params[:user].permit(:name, :address, :city, :state, :zip_code, :school, :years_practice))
     if @user.save
       redirect_to @user
     else
-      render new
+      render 'new'
     end
   end
   def destroy
