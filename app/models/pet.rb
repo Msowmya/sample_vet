@@ -1,3 +1,4 @@
 class Pet < ActiveRecord::Base
-  validates :name, presence: true
+  validates :name,:breed, presence: true, length: {maximum: 35}
+  validates :age, :weight, :dated, presence: true
 end

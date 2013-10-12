@@ -12,24 +12,28 @@
     <% end %>
 
     <p>
-      <%= f.label :Customer %><br>
+      <%= f.label :Customer %>
       <%= f.text_field :customer %>
     </p>
     <p>
-      <%= f.label :Pet %><br>
+      <%= f.label :Pet %>
       <%= f.text_field :pet %>
     </p>
     <p>
-      <%= f.label :Reason %><br>
+      <%= f.label :Reason %>
       <%= f.text_field :reason %>
     </p>
+
     <p>
-      <%= f.label :Date %><br>
+      <%= f.label :Appointment_Date %>
       <%= f.date_select :dated %>
     </p>
     <p>
-      <%= f.label :Doctor %><br>
-      <%= f.text_field :doctor %>
+      <%= f.label :Doctor %>
+      <% options= ['Bob', 'Susan'] %>
+
+      <%= f.select :doctor, options, {}, :disabled => false %>
+
     </p>
     <p>
       <%= f.submit %>

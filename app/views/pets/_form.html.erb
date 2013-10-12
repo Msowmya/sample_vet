@@ -12,13 +12,12 @@
     <% end %>
 
     <p>
-      <%= f.label :Name %><br>
+      <%= f.label :Name %>
       <%= f.text_field :name %>
     </p>
     <p>
-      <%= f.label :Pet_Type %><br>
+      <%= f.label :Pet_Type %>
       <% options= ['Cat', 'Dog', 'Bird'] %>
-
       <%= f.select :pet_type, options, {}, :disabled => false %>
     </p>
     <p>
@@ -26,15 +25,15 @@
       <%= f.text_field :breed%>
     </p>
     <p>
-      <%= f.label :Age %><br>
+      <%= f.label :Age %>
       <%= f.text_field :age %>
     </p>
     <p>
-      <%= f.label :Weight %><br>
+      <%= f.label :Weight %>
       <%= f.text_field :weight %>
     </p>
     <p>
-      <%= f.label :Date %><br>
+      <%= f.label :Date %>
       <%= f.date_select :dated %>
     </p>
     <p>

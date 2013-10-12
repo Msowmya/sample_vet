@@ -1,3 +1,3 @@
 class Appointment < ActiveRecord::Base
-  validates :dated,:pet,:customer, presence: true
+  validates :pet, :customer, :reason, presence: true
 end
